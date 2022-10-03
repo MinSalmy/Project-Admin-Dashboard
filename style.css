@@ -163,6 +163,7 @@ header .profile-action {
     background-color: var(--main-color-light-theme);
     color: var(--main-subcolor-light-theme);
     margin: auto 10px;
+    transition: all 0.6s ease;
 }
 
 .dark .buttons-wrapper button {
@@ -170,6 +171,17 @@ header .profile-action {
     color: var(--main-subcolor-dark-theme);    
 }
 
+.buttons-wrapper button:hover {
+    color: var(--main-color-light-theme);
+    background-color: var(--main-subcolor-light-theme);
+    border: 1px solid var(--main-color-light-theme);
+}
+
+.dark .buttons-wrapper button:hover {
+    color: var(--main-color-dark-theme);
+    background-color: var(--main-subcolor-dark-theme);
+    border: 1px solid var(--main-color-dark-theme);
+}
 
 /* боковая панель */
 aside {
@@ -230,6 +242,7 @@ main {
 
 .dark main {
     background-color: var(--background-dark-theme);
+    color: var(--main-subcolor-light-theme);
 }
 
 main .user-projects {
@@ -275,6 +288,7 @@ footer {
 
 .dark .footer {
     background-color: var(--main-subcolor-dark-theme);
+    color: var(--main-subcolor-light-theme);
 }
 
 .icon {
